@@ -33,5 +33,6 @@ bool isDigit(std::string a){
   }
 
   if (isSqrt(a)){ toReturn = true; } // just in case....
+  if (isFloat(a)){ toReturn = true; } // just in case....
   return toReturn;
 }
