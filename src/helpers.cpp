@@ -6,7 +6,7 @@ bool isFloat(std::string a){
   bool toReturn = false, mark = false;
   for (unsigned int i = 0; i < a.size(); i++){
     if (std::isdigit(static_cast<unsigned char>(a[i]))){ toReturn = true; }
-    else if (a[i] == '.' || a[i] == ','){ mark = true; } // Indication of a float
+    else if (a[i] == '.'){ mark = true; } // Indication of a float
     else{ toReturn = false; break; }
   }
   if (!mark){ toReturn = false; }
