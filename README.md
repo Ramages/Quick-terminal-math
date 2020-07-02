@@ -1,6 +1,8 @@
 # Quick-terminal-math
 An easy way to execute mathematical operations from the terminal
 
+<b>FYI: Use `.` instead of `,` when indicating a float </b>
+
 Supported operations<br/>
 #### add
 ```
