@@ -8,7 +8,7 @@ std::string divL(std::string a, std::string b){ return std::to_string(std::stof(
 
 std::string mult(std::string a, std::string b){ return std::to_string(std::stof(a) * std::stof(b)); }
 
-std::string mod(std::string a, std::string b){ return std::to_string(std::stof(a) % std::stof(b)); }
+std::string mod(std::string a, std::string b){ return std::to_string(std::stoi(a) % std::stoi(b)); }
 
 std::string rise(std::string a, std::string b){ return std::to_string(pow(std::stof(a) ,std::stof(b))); }
 
