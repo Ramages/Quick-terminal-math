@@ -25,6 +25,28 @@ bool isSqrt(std::string a){
   return toReturn;
 }
 
+bool isLn(std::string a){
+  bool toReturn = false;
+  std::string ln = "ln";
+
+  for (unsigned int i = 0; i < ln.size(); i++){
+    if (a[i] == ln[i]){ toReturn = true; }
+    else{ toReturn = false; break; }
+  }
+  return toReturn;
+}
+
+bool isLg(std::string a){
+  bool toReturn = false;
+  std::string lg = "lg";
+
+  for (unsigned int i = 0; i < lg.size(); i++){
+    if (a[i] == lg[i]){ toReturn = true; }
+    else{ toReturn = false; break; }
+  }
+  return toReturn;
+}
+
 bool isDigit(std::string a){
   bool toReturn = false;
   for (unsigned int i = 0; i < a.size(); i++){
@@ -34,5 +56,7 @@ bool isDigit(std::string a){
 
   if (isSqrt(a)){ toReturn = true; } // just in case....
   if (isFloat(a)){ toReturn = true; } // just in case....
+  if (isLg(a)){ toReturn = true; }
+  if (isLn(a)){ toReturn = true; }
   return toReturn;
 }
