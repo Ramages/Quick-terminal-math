@@ -9,9 +9,17 @@ int main(int argc, char** argv){
     std::string a = argv[1];
     if (isSqrt(a)){
       a.erase(0, 4); // Removes sqrt from the input
-      if (!isFloat(a)){ result = sqrtL(a); }
-      else{ result = sqrtL(a); }
+      result = sqrtL(a);
     }
+    else if (isLg(a)){
+      a.erase(0,2);
+      result = lg(a);
+    }
+    else if (isLn(a)){
+      a.erase(0,2);
+      result = ln(a);
+    }
+
     else{ result = a; }
 
   }else if (argc == 4 && isDigit(argv[1]) && isDigit(argv[3])){
@@ -19,14 +27,28 @@ int main(int argc, char** argv){
 
     if (isSqrt(a)){
       a.erase(0, 4); // Removes sqrt from the input
-      if (!isFloat(a)){ a = sqrtL(a); }
-      else{ a = sqrtL(a); }
+      a = sqrtL(a);
+    }
+    else if (isLg(a)){
+      a.erase(0, 2); // Removes lg from the input
+      a = lg(a);
+    }
+    else if (isLn(a)){
+      a.erase(0, 2); // Removes ln from the input
+      a = lg(a);
     }
 
     if (isSqrt(b)){
       b.erase(0, 4); // Removes sqrt from the input
-      if (!isFloat(b)){ b = sqrtL(b); }
-      else{ b = sqrtL(b); }
+      b = sqrtL(b);
+    }
+    else if (isLg(b)){
+      b.erase(0, 2); // Removes lg from the input
+      b = lg(b);
+    }
+    else if (isLn(b)){
+      b.erase(0, 2); // Removes ln from the input
+      b = lg(b);
     }
 
     if (mOP == "+"){ result = add(a, b); }
