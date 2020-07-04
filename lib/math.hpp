@@ -11,5 +11,7 @@ std::string mult(std::string, std::string);
 std::string rise(std::string, std::string);
 std::string mod(std::string, std::string);
 std::string sqrtL(std::string);
+std::string lg(std::string);
+std::string ln(std::string);
 
 #endif
