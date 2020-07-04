@@ -14,12 +14,7 @@ std::string sub(std::string a, std::string b){
   return toReturn;
 }
 
-std::string divL(std::string a, std::string b){
-  std::string toReturn = "";
-  if (isFloat(a) || isFloat(b)){ toReturn = std::to_string(std::stof(a) / std::stof(b)); }
-  else{ toReturn = std::to_string(std::stoi(a) / std::stoi(b)); }
-  return toReturn;
-}
+std::string divL(std::string a, std::string b){ return std::to_string(std::stof(a) / std::stof(b)); }
 
 std::string mult(std::string a, std::string b){
   std::string toReturn = "";
